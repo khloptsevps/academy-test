@@ -1,6 +1,6 @@
-import { getPayload } from './handlerPayload'
+import { getPayload } from './handlerPayload';
 
-export const body = (window) => {
-  throw getPayload(window)
-  return 'I must return a string'
-}
+type windowType = typeof window;
+
+export const body = (window: windowType) => getPayload(window);
+// return 'I must return a string';

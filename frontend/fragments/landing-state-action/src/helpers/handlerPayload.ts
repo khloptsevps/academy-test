@@ -1,3 +1,5 @@
-import { getMessage } from './message'
+import { getMessage } from './message';
 
-export const getPayload = (window) => new Error(getMessage(window))
+type windowType = typeof window;
+
+export const getPayload = (window: windowType) => new Error(getMessage(window));
