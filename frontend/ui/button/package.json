@@ -1,0 +1,22 @@
+{
+  "name": "@ui/button",
+  "version": "0.0.0",
+  "license": "BSD-3-Clause",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@atls-ui-parts/button": "0.0.10",
+    "styled-tools": "^1.7.2"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.9.3",
+    "@types/styled-system": "^5",
+    "styled-system": "^5.1.5"
+  },
+  "peerDependencies": {
+    "@emotion/styled": "*",
+    "react": "*",
+    "styled-system": "*",
+    "styled-tools": "^1.7.2"
+  }
+}
