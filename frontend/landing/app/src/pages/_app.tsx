@@ -1,10 +1,12 @@
-import React             from 'react'
-import { ThemeProvider } from '@ui/theme'
+import React from 'react';
+import type { AppProps } from 'next/app';
 
-const App = ({ Component, props }) => (
+import { ThemeProvider } from '@ui/theme';
+
+const App = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider>
-    <Component />
+    <Component {...pageProps} />
   </ThemeProvider>
-)
+);
 
-export default App
+export default App;
